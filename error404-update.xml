@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+   <update>
+      <name>Error404</name>
+      <description>Error404 Component</description>
+      <element>com_error404</element>
+      <type>component</type>
+      <version>3.2</version>
+ 
+      <infourl title="Error404 URL">http://www.cdprof.com</infourl>
+      <downloads>
+         <downloadurl type="full" format="tgz">http://www.cdprof.com/update/com_error404_j16-3.2.zip</downloadurl>
+      </downloads>
+      <tags>
+         <tag>com_error404</tag>
+      </tags>
+ <client_id>1</client_id>
+      <maintainer>cdprof.com</maintainer>
+      <maintainerurl>http://www.cdprof.com</maintainerurl>
+      <section>some-section</section>
+      <targetplatform name="joomla" version="1.6" />
+   </update>
+<update>
+      <name>Error404</name>
+      <description>Error404 Component</description>
+      <element>com_error404</element>
+      <type>component</type>
+      <version>3.3</version>
+ 
+      <infourl title="Error404 URL">http://www.cdprof.com</infourl>
+      <downloads>
+         <downloadurl type="full" format="tgz">http://www.cdprof.com/update/com_error404_j16-3.3.zip</downloadurl>
+      </downloads>
+      <tags>
+         <tag>com_error404</tag>
+      </tags>
+ <client_id>1</client_id>
+      <maintainer>cdprof.com</maintainer>
+      <maintainerurl>http://www.cdprof.com</maintainerurl>
+      <section>some-section</section>
+      <targetplatform name="joomla" version="1.6" />
+   </update>
+<update>
+      <name>Error404</name>
+      <description>Error404 Component</description>
+      <element>com_error404</element>
+      <type>component</type>
+      <version>3.4</version>
+ 
+      <infourl title="Error404 URL">http://www.cdprof.com</infourl>
+      <downloads>
+         <downloadurl type="full" format="tgz">http://www.cdprof.com/update/com_error404_j16-3.4.zip</downloadurl>
+      </downloads>
+      <tags>
+         <tag>com_error404</tag>
+      </tags>
+ <client_id>1</client_id>
+      <maintainer>cdprof.com</maintainer>
+      <maintainerurl>http://www.cdprof.com</maintainerurl>
+      <section>some-section</section>
+      <targetplatform name="joomla" version="1.7" />
+   </update>
+</updates>

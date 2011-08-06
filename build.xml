@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="com_error404" default="copy_all" basedir=".">
+        <property name="src"   value="."/>
+        <property name="test"  value="/var/www/html/cdprof/components/com_error404" />
+        <property name="test_admin"  value="/var/www/html/cdprof/administrator/components/com_error404" />
+        <target name="copy_all" description="Copies files to test project.">
+                <echo message="Running build.xml. Copying files from dev to test..." />
+                <copy file="${src}/site/controller.php" todir="${test}"/>
+                <copy file="${src}/site/error404.php" todir="${test}"/>
+                <copy file="${src}/site/models/error404.php" todir="${test}/models"/>
+                <copy file="${src}/site/views/error404/view.html.php" todir="${test}/views/error404"/>
+                <copy file="${src}/site/views/error404/tmpl/default.php" todir="${test}/views/error404/tmpl"/>
+                <copy file="${src}/language/site/fr-FR.com_error404.ini" todir="../../cdprof/language/fr-FR" />
+                <copy file="${src}/language/site/en-GB.com_error404.ini" todir="../../cdprof/language/en-GB" />
+                <copy file="${src}/language/admin/fr-FR.com_error404.ini" todir="../../cdprof/administrator/language/fr-FR" />
+                <copy file="${src}/language/admin/en-GB.com_error404.ini" todir="../../cdprof/administrator/language/en-GB" />
+                <copy file="${src}/admin/controller.php" todir="${test_admin}"/>
+                <copy file="${src}/admin/error404.php" todir="${test_admin}"/>
+                <copy file="${src}/admin/models/errors404.php" todir="${test_admin}/models"/>
+                <copy file="${src}/admin/models/error404.php" todir="${test_admin}/models"/>
+                <copy file="${src}/admin/models/stats.php" todir="${test_admin}/models"/>
+                <copy file="${src}/admin/views/errors404/view.html.php" todir="${test_admin}/views/errors404"/>
+                <copy file="${src}/admin/views/error404/view.html.php" todir="${test_admin}/views/error404"/>
+                <copy file="${src}/admin/views/errors404/tmpl/default.php" todir="${test_admin}/views/errors404/tmpl"/>
+                <copy file="${src}/admin/views/error404/tmpl/form.php" todir="${test_admin}/views/error404/tmpl"/>
+                <copy file="${src}/admin/views/stats/view.html.php" todir="${test_admin}/views/stats" />
+                <copy file="${src}/admin/views/stats/tmpl/default.php" todir="${test_admin}/views/stats/tmpl" />
+                <copy file="${src}/admin/controllers/error404.php" todir="${test_admin}/controllers"/>
+                <copy file="${src}/admin/tables/error404.php" todir="${test_admin}/tables"/>
+        </target>
+</project>

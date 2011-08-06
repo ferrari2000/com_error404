@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="com_error404" basedir="." default="zip">
+ 
+        <property name="src" value="${project.basedir}" override="true" />
+        <fileset dir="${src}" id="allfiles">
+                <include name="admin/*.*" />
+                <include name="admin/sql/*.*" />
+                <include name="admin/models/*.*" />
+                <include name="admin/views/*.*" />
+                <include name="admin/views/error404/*.*" />
+                <include name="admin/views/error404/tmpl/*.*" />
+                <include name="admin/views/errors404/*.*" />
+                <include name="admin/views/errors404/tmpl/*.*" />
+                <include name="admin/views/stats/*.*" />
+                <include name="admin/views/stats/tmpl/*.*" />
+                <include name="admin/tables/*.*" />
+                <include name="admin/controllers/*.*" />
+                <include name="admin/language/cs-CZ/*.*" />
+                <include name="admin/language/en-GB/*.*" />
+                <include name="admin/language/fr-FR/*.*" />
+                <include name="admin/language/nl-NL/*.*" />
+                <include name="admin/language/pt-BR/*.*" />
+                <include name="admin/language/ru-RU/*.*" />
+                <include name="admin/language/uk-UK/*.*" />
+                <include name="site/*.*" />
+                <include name="site/models/*.*" />
+                <include name="site/views/*.*" />
+                <include name="site/views/error404/*.*" />
+                <include name="site/views/error404/tmpl/*.*" />
+                <include name="site/language/cs-CZ/*.*" />
+                <include name="site/language/en-GB/*.*" />
+                <include name="site/language/fr-FR/*.*" />
+                <include name="site/language/ja-JP/*.*" />
+                <include name="site/language/nl-NL/*.*" />
+                <include name="site/language/pt-BR/*.*" />
+                <include name="site/language/ru-RU/*.*" />
+                <include name="site/language/uk-UK/*.*" />
+                <include name="error404.xml" />
+                <include name="install.error404.php" />
+                <include name="uninstall.error404.php" />
+                <include name="gpl-2.0.txt" />
+        </fileset>
+ 
+        <!-- Copy Target -->
+        <target name="zip" description="zip component">
+                <echo>zipping files ...
+                </echo>
+                <delete file="com_error404.zip" />
+                <zip destfile="com_error404.zip">
+                        <fileset refid="allfiles" />
+                </zip>
+        </target>
+</project>
+
+
