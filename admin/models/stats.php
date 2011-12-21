@@ -28,8 +28,8 @@ var $_stats;
 var $_total = null;
 var $_pagination = null;
 //var $_top = null;
-var $_colonne;//colonne de la table à compter
-var $_max_top; //nombre de top à afficher
+var $_colonne;//table's column to count
+var $_max_top; //number of tops to display
 	
 function __construct()
   {
@@ -52,7 +52,7 @@ function __construct()
 
 function connectCdprof()
 	{
-		// Connexion à la base 
+		// Connection to database
 		$db	   =& JFactory::getDBO();
 		return $db;
 	}
@@ -96,7 +96,7 @@ function getPagination()
 
 function getStats()
 {
-	//affiche des calculs statistiques sur les erreurs
+	//calculate statistics about the errors
 	if (empty($this->_stats))
 	{
 		$query="SELECT ".$this->_colonne.",count(*) AS total FROM #__error404_stats GROUP BY ".$this->_colonne." ORDER BY total DESC LIMIT ".$this->_max_top;

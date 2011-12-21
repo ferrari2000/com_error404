@@ -34,7 +34,7 @@ class errors404Viewerrors404 extends JView
 	//$choixform = $model->getQueryVariable('choixform');
 		$errors =& $this->get('Data');
 	
-	//test des plugin
+	//test if plugins Redirect and error404 are activated
 	$redirectActivated=$model->testRedirectPlugin();
 	$error404Activated=$model->testError404Plugin();
 				

@@ -88,6 +88,11 @@ function cancel()
     $this->setRedirect( 'index.php?option=com_error404', $msg );
 }
 
+/**
+ * 
+ * Go to Stats page
+ * @return void
+ */
 function goStats()
 {
 	$link='index.php?option=com_error404&view=stats';

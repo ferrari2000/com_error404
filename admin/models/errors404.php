@@ -28,7 +28,7 @@ var $_data;
 
 function connectCdprof()
 	{
-		// Connexion à la base 
+		// Connection to database
 		$db	   =& JFactory::getDBO();
 		return $db;
 	}

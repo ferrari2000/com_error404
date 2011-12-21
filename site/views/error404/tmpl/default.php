@@ -13,7 +13,7 @@ $to=$this->to;
 $sujet=$this->sujet;
 $use_google_search=$this->use_google_search;
 $texte_erreur=$this->texte_erreur;
-//echo "test : $texte - $to - $sujet"; //à activer pour débugger
+//echo "test : $texte - $to - $sujet"; //for debugging
 
 
 ?>

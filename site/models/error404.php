@@ -29,7 +29,7 @@ class error404Modelerror404 extends JModel
 
 	function connectCdprof()
 	{
-		// Connexion à la base 
+		// Connection to database
 		$db	   =& JFactory::getDBO();
 		return $db;
 	}
@@ -37,8 +37,7 @@ class error404Modelerror404 extends JModel
 
 	function getChaine($db)
 	{
-	//récupère les chaines pour lesquelles ne pas envoyer de mail
-		//$db = $this->connectCdprof();
+	//searching for the keywords for which not to send an email with the error
 		$query = 'SELECT * FROM #__error404';
 		$test=$db->SetQuery( $query );
 		$chaine = $db->loadAssocList();
@@ -58,22 +57,22 @@ class error404Modelerror404 extends JModel
 		{
 		switch ($value['type'])
 			{
-			case 1://on recherche la chaine dans l'uri
+			case 1://we look for the keyword in the uri
 				if (strpos($uri,$value['chaine'])!==FALSE) {$envoyer="non";}
 			break;
-			case 2://on recherche la chaine dans le referrer
+			case 2://we look for the keyword in the referrer
 				if (strpos($referer,$value['chaine'])!==FALSE) {$envoyer="non";}
 			break;
-			case 3;//on recherche la chaine dans user_agent
+			case 3;//we look for the keyword in the user_agent
 				if (strpos($user_agent,$value['chaine'])!==FALSE) {$envoyer="non";}
 			break;
-			default://par défaut on envoie un mail
+			default://by default we send mail
 			}
 		}
 			
 			
 	
-	if ($envoyer=="oui")
+	if ($envoyer=="oui") //if sending is "yes"
 		{
 		$mailer =& JFactory::getMailer();
 		$mailer->addRecipient($to);
