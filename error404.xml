@@ -2,12 +2,12 @@
 <extension type="component" version="1.6.0" method="upgrade">
 	<name>COM_ERROR404</name>
 	<author>Alain Bolli</author>
-	<creationDate>22 juillet 2011</creationDate>
+	<creationDate>7 mars 2012</creationDate>
 	<copyright>Copyright (C) 2009-2011 cdprof.com. All rights reserved.</copyright>
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
 	<authorEmail>alain.bolli@cdprof.com</authorEmail>
 	<authorUrl>http://www.cdprof.com</authorUrl>
-	<version>3.4</version>
+	<version>3.5</version>
 	<description>COM_ERROR404_DESCRIPTION</description>
 	<installfile>install.error404.php</installfile>
 	<uninstallfile>uninstall.error404.php</uninstallfile>
